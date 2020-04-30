@@ -1,0 +1,377 @@
+@font-face {
+    font-family: shabnam;
+    src: url(Assets/Fonts/Shabnam-Bold.ttf);
+    src: url(Assets/Fonts/Shabnam-Light.ttf);
+    src: url(Assets/Fonts/Shabnam.eot);
+    src: url(Assets/Fonts/Shabnam.ttf);
+    src: url(Assets/Fonts/Shabnam.woff);
+  }
+  @font-face {
+    font-family: Comfortaa;
+    src: url(Assets/Fonts/Comfortaa-Bold.ttf);
+    src: url(Assets/Fonts/Comfortaa-Light.ttf);
+    src: url(Assets/Fonts/Comfortaa-Regular.ttf);
+  }
+  * {
+    font-family: shabnam;
+  }
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+#root{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.right-side{
+    width: 45%;
+    height: 100%;
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#size{
+    font-weight: 900;
+    color: rgb(0, 150, 250);
+}
+.right-side .top-voroud{
+    width: 60%;
+    height: 20%;
+    margin-top: 10%;
+    /* background-color: gainsboro; */
+    display: flex;
+    justify-content: flex-end;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: blue;
+}
+.right-side .login-text{
+    width: 60%;
+    height: 50%;
+    /* background-color: rgb(213, 252, 156); */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+p{
+    margin-top: 0px;
+}
+.font-size1{
+    direction: rtl;
+    font-size: 22px;
+    color: rgb(50, 50, 50);
+}
+.font-size2{
+    direction: rtl;
+    font-size: 15px;
+    color: rgb(150, 150, 150);
+}
+.right-side .login-text .user-pas1{
+    width: 100%;
+    height: 15%;
+    border-bottom: 1.5px solid rgb(0, 150, 250);
+    /* background-color: seashell; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.right-side .login-text .username{
+    display: block;
+    width: 95%;
+    height: 50%;
+    direction: rtl;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.username::placeholder{
+    color: rgb(0, 150, 250);
+}
+.right-side .login-text .icon1{
+    width: 5%;
+    height: 50%;
+    color: rgb(0, 150, 250);
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+.right-side .login-text .icon2{
+    width: 5%;
+    height: 50%;
+    color: rgb(150, 150, 150);
+    /* background-color: royalblue; */
+    display: flex;
+    align-items: center;
+}
+.right-side .login-text .user-pas2{
+    width: 100%;
+    height: 15%;
+    border-bottom: 1.5px solid rgb(150, 150, 150);
+    /* background-color: seashell; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.right-side .login-text .user-pas2 .password{
+    display: block;
+    width: 95%;
+    height: 50%;
+    direction: rtl;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.right-side .login-text .security-code{
+    width: 100%;
+    height: 15%;
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    /* align-items: flex-end; */
+}
+.right-side .login-text .security-code .right{
+    width: 55%;
+    height: 50%;
+    border-bottom: 1.5px solid rgb(150, 150, 150);
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.right-side .login-text .security-code .right .sec-code{
+    display: block;
+    width: 95%;
+    height: 100%;
+    direction: rtl;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.right-side .login-text .security-code .right .icon{
+    width: 5%;
+    height: 50%;
+    color: rgb(150, 150, 150);
+    /* background-color: royalblue; */
+    display: flex;
+    align-items: center;
+}
+.right-side .login-text .security-code .left{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    /* background-color: brown; */
+}
+.code-img{
+    width: 70%;
+    height: auto;
+}
+.right-side .login-text .login{
+    width: 100%;
+    height: 12%;
+    background-color: rgb(0, 150, 250);
+    color: white;
+    display: block;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-top: 10%;
+    border: 1px solid rgb(0, 150, 250);
+    outline: none;
+}
+.right-side .login-text .login:hover{
+    background-color: rgb(0, 120, 200);
+    border: 1px solid rgb(0, 120, 200);
+}
+
+.right-side .login-text .checkbox{
+    direction: rtl;
+    margin-top: 3%;
+    font-size: 12px;
+    color: rgb(150, 150, 150);
+    display: flex;
+    align-items: center;
+}
+.left-side{
+    width: 55%;
+    height: 100%;
+    background-color: rgb(150, 240, 220);
+    background-image: linear-gradient(to bottom left, rgb(150, 240, 220) ,rgb(40, 190, 240));
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.left-side .logo-text{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.left-side .logo-img{
+    width: 100px;
+    height: auto;
+    margin-bottom: 32%;
+}
+.left-side p{
+    margin-bottom: 10px;
+    font-family: Comfortaa;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    body{
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .right-side{
+        width: 100%;
+        height: 600px;
+    }
+    .left-side{
+        width: 100%;
+        height: 600px;
+    }
+    .left-side .logo-img{
+        width: 100px;
+        height: auto;
+        margin-bottom: 32%;
+    }
+}
+
+.razar {
+    float:left;
+    position: absolute;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    /* background-size: 100% 100%; */
+    /* background-image: url(./Assets/PNG/Logo.png); */
+    /* border-radius:3px; */
+    /* box-shadow:0 1px 1px 0 rgba(0,0,0,0.4), 0 0 4px 1px rgba(0,0,0,0.2), inset 0 1px 1px 0 rgba(255,255,255,0.2), inset 0 2px 4px 1px rgba(255,255,255,0.1); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .ringbase {
+    position:absolute;
+    /* top:50%; */
+    /* left:50%; */
+    width:800px;
+    height:800px;
+    border-radius:50%;
+    /* opacity:0.1; */
+    /* z-index:100; */
+  }
+  
+  .ring1 {
+    box-shadow:0 0 1px 0px #496100, inset 0 0 1px 0px #496100 ,inset 0 0 1px 0px #496100;
+    -moz-animation: ring 4s ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation: ring 4s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation: ring 4s ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .ring2 {
+    box-shadow:0 0 1px 0px #496080, inset 0 0 1px 0px #496080;
+    -moz-animation: ring 4s ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation: ring 4s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.5s;
+    animation: ring 4s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.8s;
+  }
+  .ring3 {
+    box-shadow:0 0 1px 0px #496060, inset 0 0 1px 0px #496060;
+    -moz-animation: ring 4s ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-delay: 0.7s;
+    -webkit-animation: ring 4s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.7s;
+    animation: ring 4s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1.6s;
+  }
+  .ring4 {
+    box-shadow:0 0 1px 0px #496040, inset 0 0 1px 0px #496040;
+    -moz-animation: ring 4s ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-delay: 0.7s;
+    -webkit-animation: ring 4s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.7s;
+    animation: ring 4s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2.4s;
+  }
+  .ring5 {
+    box-shadow:0 0 1px 0px #496040, inset 0 0 1px 0px #496040;
+    -moz-animation: ring 4s ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-delay: 0.7s;
+    -webkit-animation: ring 4s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.7s;
+    animation: ring 4s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 3.2s;
+  }
+
+  @keyframes ring {
+    0% {transform: scale(0, 0); opacity: 0.2;}
+    50% {opacity: 0.6;}
+    80% {opacity: 0.0.8;}
+    100% {transform: scale(1.5, 1.5); opacity: 0.01;}
+  }
+  
+  
+  .pointer {
+    position: absolute;
+    width: 500%;
+    /* top: 50%; */
+    -webkit-animation: circling 10s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: circling 10s linear;
+    -moz-animation-iteration-count: infinite;
+    animation: circling 10s linear;
+    animation-iteration-count: infinite;
+    /* z-index: 20; */
+  }
+  
+  .pointer div {
+    width: 50%;
+    border-bottom:1px solid #00ffd5;
+  }
+
+  @keyframes circling {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+  }    
